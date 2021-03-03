@@ -1,0 +1,51 @@
+{
+	"name": "gulp-webpack",
+	"version": "1.0.0",
+	"description": "",
+	"private": "true",
+	"scripts": {
+		"start": "gulp",
+		"prod": "gulp prod"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git@git.vmgr.ru:common/builder.git"
+	},
+	"author": "VMGR",
+	"license": "ISC",
+	"devDependencies": {
+		"@babel/core": "^7.11.1",
+		"@babel/preset-env": "^7.11.0",
+		"babel-loader": "^8.1.0",
+		"browser-sync": "^2.26.12",
+		"del": "^5.1.0",
+		"eslint": "^6.8.0",
+		"eslint-config-airbnb-base": "^14.2.0",
+		"eslint-config-prettier": "^6.11.0",
+		"eslint-plugin-import": "^2.22.0",
+		"eslint-plugin-prettier": "^3.1.4",
+		"gulp": "^4.0.2",
+		"gulp-autoprefixer": "^7.0.1",
+		"gulp-csso": "^3.0.1",
+		"gulp-postcss": "^8.0.0",
+		"gulp-posthtml": "^3.0.5",
+		"gulp-rename": "^1.4.0",
+		"gulp-sass": "^4.1.0",
+		"gulp-svgo": "^2.2.1",
+		"gulp-svgstore": "^7.0.1",
+		"postcss-sort-media-queries": "^1.7.26",
+		"posthtml-include": "^1.4.3",
+		"prettier": "^1.19.1",
+		"prettier-eslint": "^9.0.2",
+		"sort-css-media-queries": "^1.5.0",
+		"stylelint": "^10.1.0",
+		"stylelint-config-standard": "^18.3.0",
+		"stylelint-order": "^3.1.1",
+		"ts-loader": "^8.0.2",
+		"typescript": "^3.9.7",
+		"webpack": "^4.44.1",
+		"webpack-cli": "^3.3.12",
+		"webpack-stream": "^5.2.1"
+	},
+	"dependencies": {}
+}
