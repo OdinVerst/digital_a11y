@@ -16,7 +16,6 @@ body {
   width: 100%;
   max-width: 1032px;
   margin: 0 auto;
-  padding: 0 1em;
 }
 
 .visually-hidden {
@@ -42,4 +41,10 @@ body {
   line-height: 1;
   background: transparent;
   border: none;
+}
+
+.article-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 48px;
 }
