@@ -46,5 +46,8 @@
 		"webpack": "^4.44.1",
 		"webpack-cli": "^4.5.0",
 		"webpack-stream": "^6.1.2"
+	},
+	"dependencies": {
+		"swiper": "^6.5.0"
 	}
 }

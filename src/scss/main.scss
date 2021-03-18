@@ -1,7 +1,9 @@
 @import "./fonts";
-@import './common';
-@import '../blocks/header/style';
+@import "./common";
 // Common
 @import "../blocks/common/heading/style";
 @import "../blocks/common/article/style";
+//Blocks
+@import "../blocks/header/style";
+@import "../blocks/banner/style";
 @import "../blocks/footer/style";
