@@ -48,3 +48,18 @@ body {
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 48px;
 }
+
+.btn {
+  color: #000;
+  font-size: 1rem;
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+  line-height: 1;
+  background: #c7d2e9;
+  border: none;
+  border-radius: 8px;
+}
+
+.btn--primary {
+  color: white;
+  background: #5d16d5;
+}
