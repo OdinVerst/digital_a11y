@@ -3,16 +3,16 @@
 
 	<div class='tabs'>
 		<div role='tablist' class='tabs__btn-wrap' aria-label='Показать раздел музея'>
-			<button role='tab' aria-selected='true' aria-controls='panel-1' id='tab-1' class='reset__btn btn btn--tab'
+			<button role='tab' aria-selected='true' aria-controls='panel-2-1' id='tab-2-1' class='reset__btn btn btn--tab'
 							tabindex='0'>
 				Здания
 			</button>
-			<button role='tab' aria-selected='false' aria-controls='panel-2' id='tab-2' class='reset__btn btn btn--tab'
+			<button role='tab' aria-selected='false' aria-controls='panel-2-2' id='tab-2-2' class='reset__btn btn btn--tab'
 							tabindex='-1'>
 				История
 			</button>
 		</div>
-		<div id='panel-1' role='tabpanel' tabindex='0' aria-labelledby='tab-1'>
+		<div id='panel-2-1' role='tabpanel' tabindex='0' aria-labelledby='tab-2-1'>
 			<div class='article-grid'>
 				<include src='src/blocks/common/article/index.html'>{
 					"img": "img/blog-1.jpg",
@@ -63,7 +63,7 @@
 				</include>
 			</div>
 		</div>
-		<div id='panel-2' role='tabpanel' tabindex='0' aria-labelledby='tab-2' hidden>
+		<div id='panel-2-2' role='tabpanel' tabindex='0' aria-labelledby='tab-2-2' hidden>
 			<div>
 				<p>Государственный музей изобразительных искусств имени А.С. Пушкина – одно из крупнейших в России
 					художественных собраний зарубежного искусства с древнейших времен до наших дней.</p>

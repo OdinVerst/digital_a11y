@@ -2,6 +2,7 @@ import Swiper from 'swiper/bundle';
 
 import { Tabs } from './tabs';
 import { Video } from './video';
+import { Popup } from './popup';
 
 const swiper = new Swiper('.banner-js', {
 	slidesPerView: 1,
@@ -34,29 +35,9 @@ if (skipBtn) {
 	});
 }
 
+const auth: HTMLElement | null = document.querySelector('.auth');
 const authBtn: HTMLButtonElement | null = document.querySelector('.login-btn');
-if (authBtn) {
-	const auth = document.querySelector('.auth');
-
-	authBtn.addEventListener('click', () => {
-		auth?.classList.add('active');
-		auth?.querySelector('input')?.focus();
-
-		document.addEventListener('keyup', (e) => {
-			if (e.code === 'Escape') {
-				auth?.classList.remove('active');
-				authBtn.focus();
-			}
-		});
-
-		auth?.addEventListener('click', function(event) {
-			// @ts-ignore
-			if (!event.target.closest('.auth__content') || event.target.closest('.popup-main__close')) {
-				auth.classList.remove('active');
-				// @ts-ignore
-				document.querySelector('body').removeAttribute('style');
-			}
-		});
-
-	});
+if (auth && authBtn) {
+	const authPopup = new Popup(auth, authBtn);
+	authBtn.addEventListener('click', authPopup.open);
 }

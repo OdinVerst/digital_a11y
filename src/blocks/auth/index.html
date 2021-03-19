@@ -1,6 +1,6 @@
 <div class='auth'>
-	<div class='auth__content' role="dialog" aria-labelledby="Форма авторизации">
-		<h2 class='auth__title'>Авторизоваться</h2>
+	<div class='auth__content' role="dialog" aria-labelledby="dialog1_label" aria-modal="true">
+		<h2 id='dialog1_label' class='auth__title'>Авторизоваться</h2>
 		<form class='auth__form'>
 			<label>
 				<input class='auth__input' name='login' placeholder='Email' type='text'>
@@ -10,5 +10,6 @@
 			</label>
 			<button class='btn reset__btn auth__btn'>Вход</button>
 		</form>
+		<div tabindex='0'></div>
 	</div>
 </div>
