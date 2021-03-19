@@ -33,3 +33,19 @@ if (skipBtn) {
 		skipBtn.setAttribute('tabindex', '-1')
 	})
 }
+
+const authBtn: HTMLButtonElement | null = document.querySelector('.login-btn')
+if (authBtn) {
+	authBtn.addEventListener('click', () => {
+		const auth = document.querySelector('.auth');
+		auth?.classList.add('active');
+		auth?.querySelector('input')?.focus();
+
+		document.addEventListener('keyup', (e) => {
+			if (e.code === 'Escape') {
+				auth?.classList.remove('active');
+				authBtn.focus();
+			}
+		})
+	})
+}
