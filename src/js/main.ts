@@ -30,14 +30,15 @@ videos.forEach(videoItem => {
 const skipBtn = document.querySelector('.skip');
 if (skipBtn) {
 	skipBtn.addEventListener('click', () => {
-		skipBtn.setAttribute('tabindex', '-1')
-	})
+		skipBtn.setAttribute('tabindex', '-1');
+	});
 }
 
-const authBtn: HTMLButtonElement | null = document.querySelector('.login-btn')
+const authBtn: HTMLButtonElement | null = document.querySelector('.login-btn');
 if (authBtn) {
+	const auth = document.querySelector('.auth');
+
 	authBtn.addEventListener('click', () => {
-		const auth = document.querySelector('.auth');
 		auth?.classList.add('active');
 		auth?.querySelector('input')?.focus();
 
@@ -46,6 +47,16 @@ if (authBtn) {
 				auth?.classList.remove('active');
 				authBtn.focus();
 			}
-		})
-	})
+		});
+
+		auth?.addEventListener('click', function(event) {
+			// @ts-ignore
+			if (!event.target.closest('.auth__content') || event.target.closest('.popup-main__close')) {
+				auth.classList.remove('active');
+				// @ts-ignore
+				document.querySelector('body').removeAttribute('style');
+			}
+		});
+
+	});
 }
