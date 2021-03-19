@@ -1,0 +1,18 @@
+.skip {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  white-space: nowrap;
+  clip: rect(1px, 1px, 1px, 1px);
+}
+
+.skip:focus {
+  position: absolute;
+  width: auto;
+  height: auto;
+  padding: 17px 25px;
+  overflow: auto;
+  text-decoration: none;
+  clip: auto;
+}

@@ -27,3 +27,9 @@ videos.forEach(videoItem => {
 	video.init();
 });
 
+const skipBtn = document.querySelector('.skip');
+if (skipBtn) {
+	skipBtn.addEventListener('click', () => {
+		skipBtn.setAttribute('tabindex', '-1')
+	})
+}
