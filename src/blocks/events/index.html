@@ -1,51 +1,75 @@
 <section class='events wrapper'>
-	<include src="src/blocks/common/heading/index.html">{"text": "Выставки и события"}</include>
+	<include src='src/blocks/common/heading/index.html'>{"text": "Выставки и события"}</include>
 
-	<div class="tabs">
-		<div role="tablist" aria-label="Sample Tabs">
-			<button role="tab" aria-selected="true" aria-controls="panel-1" id="tab-1" class='reset__btn btn' tabindex="0">
+	<div class='tabs'>
+		<div role='tablist' class='tabs__btn-wrap' aria-label='Показать мероприятия на период'>
+			<button role='tab' aria-selected='true' aria-controls='panel-1' id='tab-1' class='reset__btn btn btn--tab' tabindex='0'>
 				Все
 			</button>
-			<button role="tab" aria-selected="false" aria-controls="panel-2" id="tab-2" class='reset__btn' tabindex="-1">
+			<button role='tab' aria-selected='false' aria-controls='panel-2' id='tab-2' class='reset__btn btn btn--tab' tabindex='-1'>
 				Сегодня
 			</button>
-			<button role="tab" aria-selected="false" aria-controls="panel-3" id="tab-3" class='reset__btn' tabindex="-1">
+			<button role='tab' aria-selected='false' aria-controls='panel-3' id='tab-3' class='reset__btn btn btn--tab' tabindex='-1'>
 				Завтра
 			</button>
 		</div>
-		<div id="panel-1" role="tabpanel" tabindex="0" aria-labelledby="tab-1">
-			<p>Content for the first panel</p>
+		<div id='panel-1' role='tabpanel' tabindex='0' aria-labelledby='tab-1'>
+			<div class='article-grid'>
+				<include src='src/blocks/common/article/index.html'>{
+					"img": "img/blog-1.jpg",
+					"heading": "Святослав Рихтер в кругу друзей. Москва — Коктебель",
+					"dateAvailable": "Выставка до 20 ноября",
+					"text": "Текст о музее текст Текст о музее текст Текст о музее текст Текст о музее текст"
+					}
+				</include>
+
+				<include src='src/blocks/common/article/index.html'>{
+					"img": "img/blog-2.jpg",
+					"heading": "Тату",
+					"dateAvailable": "Выставка до 27 сентября",
+					"text": "Текст о музее текст Текст о музее текст Текст о музее текст Текст о музее текст"
+					}
+				</include>
+
+				<include src='src/blocks/common/article/index.html'>{
+					"img": "img/blog-3.jpg",
+					"heading": "От Дюрера до Матисса. Избранные рисунки из собрания ГМИИ им. А.С. Пушкина",
+					"dateAvailable": "Выставка до 1 ноября",
+					"text": "Текст о музее текст Текст о музее текст Текст о музее текст Текст о музее текст"
+					}
+				</include>
+
+			</div>
 		</div>
-		<div id="panel-2" role="tabpanel" tabindex="0" aria-labelledby="tab-2" hidden>
-			<p>Content for the second panel</p>
+		<div id='panel-2' role='tabpanel' tabindex='0' aria-labelledby='tab-2' hidden>
+			<div class='article-grid'>
+				<include src='src/blocks/common/article/index.html'>{
+					"img": "img/blog-1.jpg",
+					"heading": "Святослав Рихтер в кругу друзей. Москва — Коктебель",
+					"dateAvailable": "Выставка до 20 ноября",
+					"text": "Текст о музее текст Текст о музее текст Текст о музее текст Текст о музее текст"
+					}
+				</include>
+
+				<include src='src/blocks/common/article/index.html'>{
+					"img": "img/blog-2.jpg",
+					"heading": "Тату",
+					"dateAvailable": "Выставка до 27 сентября",
+					"text": "Текст о музее текст Текст о музее текст Текст о музее текст Текст о музее текст"
+					}
+				</include>
+			</div>
 		</div>
-		<div id="panel-3" role="tabpanel" tabindex="0" aria-labelledby="tab-3" hidden>
-			<p>Content for the third panel</p>
+		<div id='panel-3' role='tabpanel' tabindex='0' aria-labelledby='tab-3' hidden>
+			<div class='article-grid'>
+				<include src='src/blocks/common/article/index.html'>{
+					"img": "img/blog-3.jpg",
+					"heading": "От Дюрера до Матисса. Избранные рисунки из собрания ГМИИ им. А.С. Пушкина",
+					"dateAvailable": "Выставка до 1 ноября",
+					"text": "Текст о музее текст Текст о музее текст Текст о музее текст Текст о музее текст"
+					}
+				</include>
+			</div>
 		</div>
-	</div>
-
-
-	<div class='article-grid'>
-		<include src="src/blocks/common/article/index.html">{
-			"img": "img/blog-1.jpg",
-			"heading": "Святослав Рихтер в кругу друзей. Москва — Коктебель",
-			"dateAvailable": "Выставка до 20 ноября",
-			"text": "Текст о музее текст Текст о музее текст Текст о музее текст Текст о музее текст"
-			}</include>
-
-		<include src="src/blocks/common/article/index.html">{
-			"img": "img/blog-2.jpg",
-			"heading": "Тату",
-			"dateAvailable": "Выставка до 27 сентября",
-			"text": "Текст о музее текст Текст о музее текст Текст о музее текст Текст о музее текст"
-			}</include>
-
-		<include src="src/blocks/common/article/index.html">{
-			"img": "img/blog-3.jpg",
-			"heading": "От Дюрера до Матисса. Избранные рисунки из собрания ГМИИ им. А.С. Пушкина",
-			"dateAvailable": "Выставка до 1 ноября",
-			"text": "Текст о музее текст Текст о музее текст Текст о музее текст Текст о музее текст"
-			}</include>
-
 	</div>
 </section>

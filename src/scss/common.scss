@@ -63,3 +63,17 @@ body {
   color: white;
   background: #5d16d5;
 }
+
+.btn--tab {
+  min-width: 160px;
+  padding: 17px;
+  background: transparent;
+
+  &[aria-selected='true'] {
+    background: #c7d2e9;
+  }
+}
+
+.tabs__btn-wrap {
+  margin-bottom: 48px;
+}

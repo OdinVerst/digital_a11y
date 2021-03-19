@@ -1,46 +1,89 @@
 <section class='museum wrapper'>
-	<include src="src/blocks/common/heading/index.html">{"text": "Музей"}</include>
-	<div class='article-grid'>
-		<include src="src/blocks/common/article/index.html">{
-			"img": "img/blog-1.jpg",
-			"heading": "Святослав Рихтер в кругу друзей. Москва — Коктебель",
-			"dateAvailable": "Выставка до 20 ноября",
-			"text": "Текст о музее текст Текст о музее текст Текст о музее текст Текст о музее текст"
-			}</include>
+	<include src='src/blocks/common/heading/index.html'>{"text": "Музей"}</include>
 
-		<include src="src/blocks/common/article/index.html">{
-			"img": "img/blog-1.jpg",
-			"heading": "Святослав Рихтер в кругу друзей. Москва — Коктебель",
-			"dateAvailable": "Выставка до 20 ноября",
-			"text": "Текст о музее текст Текст о музее текст Текст о музее текст Текст о музее текст"
-			}</include>
+	<div class='tabs'>
+		<div role='tablist' class='tabs__btn-wrap' aria-label='Показать раздел музея'>
+			<button role='tab' aria-selected='true' aria-controls='panel-1' id='tab-1' class='reset__btn btn btn--tab'
+							tabindex='0'>
+				Здания
+			</button>
+			<button role='tab' aria-selected='false' aria-controls='panel-2' id='tab-2' class='reset__btn btn btn--tab'
+							tabindex='-1'>
+				История
+			</button>
+		</div>
+		<div id='panel-1' role='tabpanel' tabindex='0' aria-labelledby='tab-1'>
+			<div class='article-grid'>
+				<include src='src/blocks/common/article/index.html'>{
+					"img": "img/blog-1.jpg",
+					"heading": "Святослав Рихтер в кругу друзей. Москва — Коктебель",
+					"dateAvailable": "Выставка до 20 ноября",
+					"text": "Текст о музее текст Текст о музее текст Текст о музее текст Текст о музее текст"
+					}
+				</include>
 
-		<include src="src/blocks/common/article/index.html">{
-			"img": "img/blog-1.jpg",
-			"heading": "Святослав Рихтер в кругу друзей. Москва — Коктебель",
-			"dateAvailable": "Выставка до 20 ноября",
-			"text": "Текст о музее текст Текст о музее текст Текст о музее текст Текст о музее текст"
-			}</include>
+				<include src='src/blocks/common/article/index.html'>{
+					"img": "img/blog-1.jpg",
+					"heading": "Святослав Рихтер в кругу друзей. Москва — Коктебель",
+					"dateAvailable": "Выставка до 20 ноября",
+					"text": "Текст о музее текст Текст о музее текст Текст о музее текст Текст о музее текст"
+					}
+				</include>
 
-		<include src="src/blocks/common/article/index.html">{
-			"img": "img/blog-1.jpg",
-			"heading": "Святослав Рихтер в кругу друзей. Москва — Коктебель",
-			"dateAvailable": "Выставка до 20 ноября",
-			"text": "Текст о музее текст Текст о музее текст Текст о музее текст Текст о музее текст"
-			}</include>
+				<include src='src/blocks/common/article/index.html'>{
+					"img": "img/blog-1.jpg",
+					"heading": "Святослав Рихтер в кругу друзей. Москва — Коктебель",
+					"dateAvailable": "Выставка до 20 ноября",
+					"text": "Текст о музее текст Текст о музее текст Текст о музее текст Текст о музее текст"
+					}
+				</include>
 
-		<include src="src/blocks/common/article/index.html">{
-			"img": "img/blog-1.jpg",
-			"heading": "Святослав Рихтер в кругу друзей. Москва — Коктебель",
-			"dateAvailable": "Выставка до 20 ноября",
-			"text": "Текст о музее текст Текст о музее текст Текст о музее текст Текст о музее текст"
-			}</include>
+				<include src='src/blocks/common/article/index.html'>{
+					"img": "img/blog-1.jpg",
+					"heading": "Святослав Рихтер в кругу друзей. Москва — Коктебель",
+					"dateAvailable": "Выставка до 20 ноября",
+					"text": "Текст о музее текст Текст о музее текст Текст о музее текст Текст о музее текст"
+					}
+				</include>
 
-		<include src="src/blocks/common/article/index.html">{
-			"img": "img/blog-1.jpg",
-			"heading": "Святослав Рихтер в кругу друзей. Москва — Коктебель",
-			"dateAvailable": "Выставка до 20 ноября",
-			"text": "Текст о музее текст Текст о музее текст Текст о музее текст Текст о музее текст"
-			}</include>
+				<include src='src/blocks/common/article/index.html'>{
+					"img": "img/blog-1.jpg",
+					"heading": "Святослав Рихтер в кругу друзей. Москва — Коктебель",
+					"dateAvailable": "Выставка до 20 ноября",
+					"text": "Текст о музее текст Текст о музее текст Текст о музее текст Текст о музее текст"
+					}
+				</include>
+
+				<include src='src/blocks/common/article/index.html'>{
+					"img": "img/blog-1.jpg",
+					"heading": "Святослав Рихтер в кругу друзей. Москва — Коктебель",
+					"dateAvailable": "Выставка до 20 ноября",
+					"text": "Текст о музее текст Текст о музее текст Текст о музее текст Текст о музее текст"
+					}
+				</include>
+			</div>
+		</div>
+		<div id='panel-2' role='tabpanel' tabindex='0' aria-labelledby='tab-2' hidden>
+			<div>
+				<p>Государственный музей изобразительных искусств имени А.С. Пушкина – одно из крупнейших в России
+					художественных собраний зарубежного искусства с древнейших времен до наших дней.</p>
+
+				<p>В современной экспозиции представлены обширная учебная коллекция тонированных гипсовых слепков с произведений
+					Античности, Средних веков и эпохи Возрождения, а также собрание подлинных произведений живописи, скульптуры,
+					графики и декоративно-прикладного искусства.</p>
+
+				<p>В залах первого этажа Главного здания представлены: произведения искусства Древнего Египта, Античности,
+					собрание европейской живописи VIII–XVIII веков; два зала – Итальянский и Греческий дворики – занимают слепки.
+					На втором этаже Главного здания в залах размещены слепки произведений искусства Древней Греции, Рима, Средних
+					веков и Возрождения.</p>
+
+				<p>В начале 2017 года музей определил новое направление своей деятельности – Пушкинский XXI, – ориентированное
+					на современное российское и западное искусство во всех аспектах – выставочном, образовательном и
+					исследовательском. Таким образом, ГМИИ им. А.С. Пушкина представляет собой открытую, интерактивную сцену,
+					демонстрирующую развитие мировой культуры с древности до наших дней, живое, знакомое с детства пространство
+					для получения знаний и общения.</p>
+				<a href='/dsasd'>Читать далее</a>
+			</div>
+		</div>
 	</div>
 </section>
