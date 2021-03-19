@@ -1,5 +1,7 @@
 import Swiper from 'swiper/bundle';
 
+import { Tabs } from './tabs';
+
 const swiper = new Swiper('.banner-js', {
 	slidesPerView: 1,
 	navigation: {
@@ -12,6 +14,11 @@ const swiper = new Swiper('.banner-js', {
 	},
 });
 
-console.log(swiper);
+const tabList: NodeListOf<HTMLElement> = document.querySelectorAll('[role="tablist"]');
 
-console.log('Connect JS');
+if (tabList.length) {
+	tabList.forEach(tabsEl => {
+		const tabs = new Tabs(tabsEl);
+		tabs.init();
+	})
+}
